@@ -2,10 +2,10 @@
 
 Documentação das principais alterações sofridas por este conjunto de dados.
 
-### [0.1.0] - 2023-10-17
+### [0.1.0] - 2023-12-22
 
 - Versão inicial em homologação publicada
 
-### [0.1.0] - 2023-10-27
+### [0.1.0] - 2023-12-22
 
 - Versão inicial em produção publicada

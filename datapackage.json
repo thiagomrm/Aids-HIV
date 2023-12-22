@@ -1,0 +1,514 @@
+{
+  "name": "dados_aids_hiv_ses",
+  "title": "Dados de Aids/HIV",
+  "owner_org": "secretaria-de-estado-de-saude-ses",
+  "frequência de atualização": "mensal",
+  "version": "0.1.0",
+  "homepage": "http://vigilancia.saude.mg.gov.br",
+  "contributors": [
+      {
+        "title": "Diretoria de Vigilância de Condições Crônicas",
+        "role": "author",
+        "email": "dvcc@saude.mg.gov.br"
+      },
+      {
+        "title": "Diretoria Central de Transparência Ativa da Controladoria-Central do Estado",
+        "role": "maintainer",
+        "email": "transparencia@cge.mg.gov.br"
+      }
+  ],
+  "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/"
+      }
+  ],
+  "keywords": [
+      "Aids",
+      "HIV"
+  ],
+
+  "resources": [
+    {
+      "path": "data/dados_aids_hiv.csv",
+      "title": "Dados de Aids/HIV",
+      "name": "dados_aids_hiv",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8-sig",
+      "schema": {
+        "fields": [
+          {
+            "name": "ID_AGRAVO",
+            "type": "string",
+            "title": "ID do Agravo",
+            "description": "ID do Agravo"
+          },
+          {
+            "name": "DT_NOTIFIC",
+            "type": "date",
+            "title": "Data de Notificação",
+            "description": "Data de Notificação"
+          },
+          {
+            "name": "NU_ANO",
+            "type": "integer",
+            "title": "Ano de Notificação",
+            "description": "Ano de Notificação"
+          },
+          {
+            "name": "ID_MUNICIP",
+            "type": "string",
+            "title": "Município de Notificação",
+            "description": "Município de Notificação"
+          },
+          {
+            "name": "DT_DIAG",
+            "type": "date",
+            "title": "Data de Diagnóstico",
+            "description": "Data de Diagnóstico"
+          },
+          {
+            "name": "DT_NASC",
+            "type": "date",
+            "title": "Data de Nascimento",
+            "description": "Data de Nascimento"
+          },
+          {
+            "name": "NU_IDADE_N",
+            "type": "integer",
+            "title": "Idade",
+            "description": "Idade"
+          },
+          {
+            "name": "CS_SEXO",
+            "type": "string",
+            "title": "Sexo",
+            "description": "Sexo",
+            "constraints": {
+                "enum": [
+                  "Feminino",
+                  "Masculino",
+                  "Ignorado"
+                ]
+            }
+          },
+          {
+            "name": "CS_GESTANT",
+            "type": "string",
+            "title": "Gestante",
+            "description": "Gestante",
+            "constraints": {
+              "enum": [
+                "1° Trimestre",
+                "2° Trimestre",
+                "3° Trimestre",
+                "Idade gestacional ignorada",
+                "Não",
+                "Não se aplica",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "CS_RACA",
+            "type": "string",
+            "title": "Raça/Cor",
+            "description": "Raça/Cor",
+            "constraints": {
+                "enum": [
+                  "Branca",
+                  "Preta",
+                  "Amarela",
+                  "Parda",
+                  "Indígena",
+                  "Ignorado"
+                ]
+            }
+          },
+          {
+            "name": "CS_ESCOL_N",
+            "type": "string",
+            "title": "Escolaridade",
+            "description": "Escolaridade",
+            "constraints": {
+              "enum": [
+                  "Analfabeto ",
+                  "1ª a 4ª série incompleta do EF",
+                  "4ª série completa EF",
+                  "5ª a 8ª série incompleta do EF",
+                  "Ensino fundamental completo",
+                  "Ensino médio incompleto",
+                  "Ensino médio completo",
+                  "Educação superior incompleta",
+                  "Educação superior completa",
+                  "Ignorado",
+                  "Não se aplica"
+              ]
+            }
+          },
+          {
+            "name": "ID_MN_RESI",
+            "type": "string",
+            "title": "Município de Residência",
+            "description": "Município de Residência"
+          },
+          {
+            "name": "ANT_TRASMI",
+            "type": "string",
+            "title": "Modo de transmissão: mãe para filho",
+            "description": "Provável modo de transmissão do HIV: de mãe para filho"
+          },
+          {
+            "name": "ANTRELSE_N",
+            "type": "string",
+            "title": "Modo de transmissão: sexual",
+            "description": "Provável modo de transmissão do HIV: sexual",
+            "constraints": {
+              "enum": [
+                "Relações sexuais com Homens",
+                "Relações sexuais com Mulheres",
+                "Relações sexuais com homens e mulheres",
+                "Não foi transmissão sexual",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_DROGA",
+            "type": "string",
+            "title": "Modo de transmissão: drogas injetáveis",
+            "description": "Provável modo de transmissão do HIV: uso de drogas injetáveis",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "LAB_TRIAGE",
+            "type": "string",
+            "title": "Teste de Triagem",
+            "description": "Evidência laboratorial de infecção pelo HIV",
+            "constraints": {
+              "enum": [
+                "Positivo/Reagente",
+                "Negativo/Não reagente",
+                "Inconclusivo",
+                "Não realizado",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_TUBERC",
+            "type": "string",
+            "title": "Tuberculose disseminada/ extrapulmonar/ não cavitária ",
+            "description": "Tuberculose disseminada/ extrapulmonar/ não cavitária",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_CANDID",
+            "type": "string",
+            "title": "Candidíase Oral ou Leucoplasia Pilosa",
+            "description": "Candidíase Oral ou Leucoplasia Pilosa",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_PULMON",
+            "type": "string",
+            "title": "Tuberculose pulmonar cavitária ou não especificada",
+            "description": "Tuberculose pulmonar cavitária ou não especificada",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_HERPES",
+            "type": "string",
+            "title": "Herpes Zoster",
+            "description": "Herpes Zoster em indivíduo menor ou igual a 60 anos",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_DISFUN",
+            "type": "string",
+            "title": "Disfunção do sistema nervoso central",
+            "description": "Disfunção do sistema nervoso central",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_DIARRE",
+            "type": "string",
+            "title": "Diarreia",
+            "description": "Diarreia igual ou maior que um 1 mês",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_FEBRE",
+            "type": "string",
+            "title": "Febre",
+            "description": "Febre maior ou igual 38º C, por tempo maior ou igual a 1 mês",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_CAQUEX",
+            "type": "string",
+            "title": "Caquexia",
+            "description": "Caquexia ou pedra de peso maior que 10%",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_ASTERI",
+            "type": "string",
+            "title": "Astenia",
+            "description": "Astenia maior ou igual a 1 mês - Excluída a tuberculose como causa",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_DERMAT",
+            "type": "string",
+            "title": "Astenia",
+            "description": "Astenia maior ou igual a 1 mês",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_ANEMIA",
+            "type": "string",
+            "title": "Anemia e/ou linfopenia e/ou trombocitopenia",
+            "description": "Anemia e/ou linfopenia e/ou trombocitopenia",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_TOSSE",
+            "type": "string",
+            "title": "Tosse persistente",
+            "description": "Tosse persistente ou qualquer pneumonia - Excluída a tuberculose como causa",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_LINFO",
+            "type": "string",
+            "title": "Linfadenopatia",
+            "description": "Linfadenopatia maior ou igual a 1 cm, maior ou igual a 2 sítios extrainquinais por tempo maior ou igual a 1 mês",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_ESOF_N",
+            "type": "string",
+            "title": "Candidose",
+            "description": "Candidose (esôfago, traqueia, brônquios, pulmão)",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_PNEUMO",
+            "type": "string",
+            "title": "Pneumonia",
+            "description": "Pneumonia",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_TOXO",
+            "type": "string",
+            "title": "Toxoplasmose cerebral",
+            "description": "Toxoplasmose cerebral",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ANT_CONTAG",
+            "type": "string",
+            "title": "Contagem de linfócitos T CD4+ menor que 350 cel/mm3",
+            "description": "Contagem de linfócitos T CD4+ menor que 350 cel/mm3",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "DEF_DIAGNO",
+            "type": "string",
+            "title": "Contagem de linfócitos T CD4+ menor que 350 cel/mm3",
+            "description": "Contagem de linfócitos T CD4+ menor que 350 cel/mm3",
+            "constraints": {
+              "enum": [
+                "Sim",
+                "Não",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "DT_OBITO",
+            "type": "date",
+            "title": "Data de Óbito",
+            "description": "Data de Óbito"
+          },
+          {
+            "name": "EVOLUCAO",
+            "type": "string",
+            "title": "Evolução do caso",
+            "description": "Evolução do caso",
+            "constraints": {
+              "enum": [
+                "Vivo",
+                "Óbito por Aids",
+                "Óbito por outras causas",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "CRITERIO",
+            "type": "string",
+            "title": "Critério",
+            "description": "Critério de definição do caso",
+            "constraints": {
+              "enum": [
+                "CDC adaptado",
+                "Rio de Janeiro/Caracas",
+                "Critério óbito",
+                "Descartado",
+                "HIV+"
+              ]
+            }
+          },
+          {
+            "name": "ANT_REL_CA",
+            "type": "string",
+            "title": "Categoria de exposição ",
+            "description": "Categoria de exposição ",
+            "constraints": {
+              "enum": [
+                "Homossexual",
+                "Homo/Drogas",
+                "Homo/Hemofílico",
+                "Homo/Transfusão",
+                "Homo/Droga/Hemofílico",
+                "Homo/Droga/Transfusão",
+                "Bissexual",
+                "Bi/Drogas",
+                "Bi/Hemofílico",
+                "Bi/Transfusão",
+                "Bi/Droga/Hemofílico",
+                "Bi/Droga/Transfusão",
+                "Heterossexual",
+                "Hetero/Droga",
+                "Hetero/Hemofílico",
+                "Hetero/Transfusão",
+                "Hetero/Droga/Hemofílico"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "missingValues": [
+    "NA",
+    " ",
+    ""
+  ]
+}
