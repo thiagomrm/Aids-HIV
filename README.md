@@ -29,11 +29,11 @@ Todo indivíduo com 13 anos de idade ou mais que atenda a critérios de definiç
 
 #### __- GESTANTE/PARTURIENTE/PUÉRPERA COM HIV__.
 
-* Toda mulher em que for detectada a infecção por HIV, ou aquela que já tenha o diagnóstico confirmado de HIV ou Aids, no momento da gestação, do parto ou do puerpério.
+Toda mulher em que for detectada a infecção por HIV, ou aquela que já tenha o diagnóstico confirmado de HIV ou Aids, no momento da gestação, do parto ou do puerpério.
 
 #### __- CRIANÇA EXPOSTA AO HIV__.
 
-* Toda criança nascida de mãe infectada pelo HIV ou que tenha sido amamentada por mulher infectada pelo HIV.
+Toda criança nascida de mãe infectada pelo HIV ou que tenha sido amamentada por mulher infectada pelo HIV.
 
 #### __- AIDS EM CRIANÇAS MENORES DE 13 ANOS DE IDADE__.
 
@@ -43,7 +43,7 @@ Toda criança menor de 13 anos de idade que atenda aos critérios de definição
 
 * __Critério excepcional óbito__: menção de Aids/Sida (ou termos equivalentes) em algum campo da Declaração de Óbito ou Menção de infecção pelo HIV (ou termos equivalentes) e de doença indicativa/presuntiva de Aids em algum campo da Declaração de Óbito + investigação epidemiológica inconclusiva.
 
-Os dados foram extraídos do Sinan por meio do tabulador de informações em saúde [Tabnet](http://vigilancia.saude.mg.gov.br/index.php/informacoes-de-saude/informacoes-de-saude-tabnet-mg/), com a seleção dos casos de sífilis adquirida, sífilis em gestante e sífilis congênita no período de 2010 a 2023.
+Os dados foram extraídos do Sinan por meio do tabulador de informações em saúde [Tabnet](http://vigilancia.saude.mg.gov.br/index.php/informacoes-de-saude/informacoes-de-saude-tabnet-mg/), com a seleção dos casos de HIV/Aids e de gestante com HIV no período de 2010 a 2023.
 
 ### ATUALIZAÇÃO DOS DADOS
 
