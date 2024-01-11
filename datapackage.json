@@ -49,7 +49,7 @@
           },
           {
             "name": "DT_NOTIFIC",
-            "type": "date",
+            "type": "string",
             "title": "Data de Notificação",
             "description": "Data de Notificação"
           },
@@ -67,13 +67,13 @@
           },
           {
             "name": "DT_DIAG",
-            "type": "date",
+            "type": "string",
             "title": "Data de Diagnóstico",
             "description": "Data de Diagnóstico"
           },
           {
             "name": "DT_NASC",
-            "type": "date",
+            "type": "string",
             "title": "Data de Nascimento",
             "description": "Data de Nascimento"
           },
@@ -441,7 +441,7 @@
           },
           {
             "name": "DT_OBITO",
-            "type": "date",
+            "type": "string",
             "title": "Data de Óbito",
             "description": "Data de Óbito"
           },
